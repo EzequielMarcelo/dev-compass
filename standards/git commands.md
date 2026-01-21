@@ -154,7 +154,15 @@ git tag -d tag-name
 git push -d origin 1.0.0
 ```
 
-## 11. Help
+## 11. Rebase
+
+```sh
+# Rename commit author name and email from commit hash
+git rebase -i commithash --exec "git commit --amend --author=`"Correct Name <correct_email@example.com>`" --no-edit"
+```
+
+## 12. Help
+
 ```sh
 # Use git help <command> to view detailed documentation for any command:
 git help commit
